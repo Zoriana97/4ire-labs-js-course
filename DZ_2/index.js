@@ -1,5 +1,3 @@
-
-
 let exchangeCurrency;
 
 let exchangeCurrencyRate;
@@ -15,21 +13,31 @@ let requiredCurrencyRate;
 let doExchange = true;
 
 
+let usd = 1;
 
-let currencyRateUSD = {
-   usd: 1,
-   uah: 27,
-   eur: 0.86,
-   pln: 3.97,
-   czh: 22.04 
-};
+let uah = 27;
+
+let eur = 0.86;
+
+let pln = 3.97;
+
+let czh = 22.04;
 
 
 while(doExchange) {
     while(!exchangeCurrencyRate) {
-        exchangeCurrency = prompt('Enter the name of the currency which you want to exchange');
-        exchangeCurrencyRate = currencyRateUSD[String(exchangeCurrency).toLowerCase()];
-        if(!exchangeCurrencyRate) {
+        exchangeCurrency = String(prompt('Enter the name of the currency you want to exchange (usd, uah, eur, pln, czh)')).toLowerCase();
+        if(exchangeCurrency === 'usd') {
+            exchangeCurrencyRate = usd;
+        }   else if(exchangeCurrency === 'uah') {
+            exchangeCurrencyRate = uah;
+        }   else if (exchangeCurrency === 'eur') {
+            exchangeCurrencyRate = eur;
+        }   else if(exchangeCurrency === 'pln') {
+            exchangeCurrencyRate = pln;
+        }   else if(exchangeCurrency === 'czh') {
+            exchangeCurrencyRate = czh;
+        }   else {
             alert('Please enter one of currencies: usd, uah, eur, pln, czh');
         }
     }
@@ -43,9 +51,18 @@ while(doExchange) {
     }
 
     while(!requiredCurrencyRate) {
-        requiredCurrency = prompt('Enter the name of the currency you want to get');
-        requiredCurrencyRate = currencyRateUSD[String(requiredCurrency).toLowerCase()];
-        if(!requiredCurrencyRate) {
+        requiredCurrency = String(prompt('Enter the name of the currency you want to get (usd, uah, eur, pln, czh)')).toLowerCase();
+        if(requiredCurrency === 'usd') {
+            requiredCurrencyRate = usd;
+        }   else if(requiredCurrency === 'uah') {
+            requiredCurrencyRate = uah;
+        }   else if (requiredCurrency === 'eur') {
+            requiredCurrencyRate = eur;
+        }   else if(requiredCurrency === 'pln') {
+            requiredCurrencyRate = pln;
+        }   else if(requiredCurrency === 'czh') {
+            requiredCurrencyRate = czh;
+        }   else {
             alert('Please enter one of currencies: usd, uah, eur, pln, czh');
         }
     }
@@ -61,11 +78,4 @@ while(doExchange) {
     currencyAmount = null;
 
     requiredCurrencyRate = null;
-
 }
-
-
-
-
-
-
