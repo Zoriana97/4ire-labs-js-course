@@ -1,8 +1,12 @@
 function filterBy(array, dataType) {
     let filteredArr = [];
     for(let i = 0; i < array.length; i++) {
-        if(typeof array[i] !== dataType) {
-            filteredArr.push(array[i]);       
+        if (array[i] !== null) {
+            if(typeof array[i] !== dataType) {
+                filteredArr.push(array[i]);       
+            }
+        } else if (dataType !== 'null') {
+            filteredArr.push(array[i]);
         }
     }
     return filteredArr;
