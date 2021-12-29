@@ -1,0 +1,8 @@
+Используя наработки которые сделали на занятии, доделать отображение карточек с фильмами дополнив карточки всей недостающей информацией.
+
+
+Необходимо собрать информацию для каждого фильма по описанию с помощью id фильма из массива популярных и сделать дополнительный запрос на [https://kinopoiskapiunofficial.tech/api/v2.2/films/301](https://www.google.com/url?q=https://www.google.com/url?q%3Dhttps://kinopoiskapiunofficial.tech/api/v2.2/films/301%26amp;sa%3DD%26amp;source%3Deditors%26amp;ust%3D1640433572209000%26amp;usg%3DAOvVaw0zpblNt7l4Yp396Y6DbvYm&sa=D&source=docs&ust=1640433572213649&usg=AOvVaw2-NIp_pSUAVb8HZhHIUtYd) где 301 - id конкретного фильма.
+
+
+
+Задание со ( * )При клике на карточку открывать [popup](https://www.google.com/url?q=https://www.google.com/url?q%3Dhttps://html5css.ru/howto/howto_js_popup.php%26amp;sa%3DD%26amp;source%3Deditors%26amp;ust%3D1640433572209000%26amp;usg%3DAOvVaw3r9YnktxAhzK4GnbgI1hsM&sa=D&source=docs&ust=1640433572213894&usg=AOvVaw2f1szK1olf3u97dT2kUOq5) и отображать всю подробную информацию из запроса выше в том числе все оценки критиков и так для каждого фильма
